@@ -101,7 +101,28 @@ var cubes_json = {
   "colour": 230
 };
 
+
+var move_json = {
+  "type": "move",
+  "message0": "move by x:%1 y:%2 z:%3",
+  "args0": [
+    { "type": "input_value", "name": "X", "check": "Number"},
+    { "type": "input_value", "name": "Y", "check": "Number"},
+    { "type": "input_value", "name": "Z", "check": "Number"}
+  ],
+  "inputsInline": true,
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 230
+}
+
 // -------------------------------------------------------------------------------------------------
+
+Blockly.Blocks['cby_move'] = {
+  init: function () {
+    this.jsonInit(move_json);
+  }
+};
 
 Blockly.Blocks['cby_cubes'] = {
   init: function () {
