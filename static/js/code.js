@@ -6,6 +6,12 @@ Blockly.Lua['cby_cubes'] = function (block) {
   return [code, Blockly.Lua.ORDER_NONE];
 };
 
+Blockly.Lua['cby_wools'] = function (block) {
+  var cube = block.getFieldValue('CUBE');
+  var code = 'wools.' + cube;
+  return [code, Blockly.Lua.ORDER_NONE];
+};
+
 Blockly.Lua['cby_place'] = function (block) {
   var cube = Blockly.Lua.valueToCode(block, 'CUBE', Blockly.Lua.ORDER_ATOMIC) || 'cubes.stone';
   var code = 'place(' + cube + ')\n';

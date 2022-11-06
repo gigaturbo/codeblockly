@@ -255,6 +255,11 @@
                 </value>
             </block>
         </category>
+        <category name="Build" colour="30">
+            <block type="cby_place"></block>
+            <block type="cby_cubes"></block>
+            <block type="cby_wools"></block>
+        </category>s
     </xml>
 
     <script>
