@@ -12,9 +12,51 @@ Blockly.Lua['cby_wools'] = function (block) {
   return [code, Blockly.Lua.ORDER_NONE];
 };
 
+Blockly.Lua['cby_plants'] = function (block) {
+  var cube = block.getFieldValue('CUBE');
+  var code = 'plants.' + cube;
+  return [code, Blockly.Lua.ORDER_NONE];
+};
+
 Blockly.Lua['cby_place'] = function (block) {
   var cube = Blockly.Lua.valueToCode(block, 'CUBE', Blockly.Lua.ORDER_ATOMIC) || 'cubes.stone';
   var code = 'place(' + cube + ')\n';
+  return code;
+};
+
+Blockly.Lua['cby_up'] = function (block) {
+  var n = Blockly.Lua.valueToCode(block, 'N', Blockly.Lua.ORDER_ATOMIC) || 1;
+  var code = 'up(' + n + ')\n'
+  return code;
+};
+
+Blockly.Lua['cby_down'] = function (block) {
+  var n = Blockly.Lua.valueToCode(block, 'N', Blockly.Lua.ORDER_ATOMIC) || 1;
+  var code = 'down(' + n + ')\n'
+  return code;
+};
+
+Blockly.Lua['cby_left'] = function (block) {
+  var n = Blockly.Lua.valueToCode(block, 'N', Blockly.Lua.ORDER_ATOMIC) || 1;
+  var code = 'left(' + n + ')\n'
+  return code;
+};
+
+Blockly.Lua['cby_right'] = function (block) {
+  var n = Blockly.Lua.valueToCode(block, 'N', Blockly.Lua.ORDER_ATOMIC) || 1;
+  var code = 'right(' + n + ')\n'
+  return code;
+};
+
+Blockly.Lua['cby_back'] = function (block) {
+  var n = Blockly.Lua.valueToCode(block, 'N', Blockly.Lua.ORDER_ATOMIC) || 1;
+  var code = 'back(' + n + ')\n'
+  return code;
+};
+
+Blockly.Lua['cby_forward'] = function (block) {
+  var n = Blockly.Lua.valueToCode(block, 'N', Blockly.Lua.ORDER_ATOMIC) || 1;
+  var code = 'forward(' + n + ')\n'
   return code;
 };
 

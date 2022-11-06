@@ -237,6 +237,48 @@
         <category name="Functions" colour="290" custom="PROCEDURE"></category>
         <sep></sep>
         <category name="Movement" colour="10">
+            <block type="cby_up">
+                <value name="N">
+                    <shadow type="math_number">
+                        <field name="NUM">1</field>
+                    </shadow>
+                </value>
+            </block>
+            <block type="cby_down">
+                <value name="N">
+                    <shadow type="math_number">
+                        <field name="NUM">1</field>
+                    </shadow>
+                </value>
+            </block>
+            <block type="cby_forward">
+                <value name="N">
+                    <shadow type="math_number">
+                        <field name="NUM">1</field>
+                    </shadow>
+                </value>
+            </block>
+            <block type="cby_back">
+                <value name="N">
+                    <shadow type="math_number">
+                        <field name="NUM">1</field>
+                    </shadow>
+                </value>
+            </block>
+            <block type="cby_left">
+                <value name="N">
+                    <shadow type="math_number">
+                        <field name="NUM">1</field>
+                    </shadow>
+                </value>
+            </block>
+            <block type="cby_right">
+                <value name="N">
+                    <shadow type="math_number">
+                        <field name="NUM">1</field>
+                    </shadow>
+                </value>
+            </block>
             <block type="cby_move">
                 <value name="X">
                     <shadow type="math_number">
@@ -259,6 +301,7 @@
             <block type="cby_place"></block>
             <block type="cby_cubes"></block>
             <block type="cby_wools"></block>
+            <block type="cby_plants"></block>
         </category>s
     </xml>
 
